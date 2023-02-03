@@ -10,10 +10,11 @@ class Categories(models.Model):
 
 class Books(models.Model):
     book_name=models.CharField(max_length=200,unique=True)
+    author=models.CharField(max_length=200,null=True)
     category=models.ForeignKey(Categories,on_delete=models.CASCADE)
     image = models.ImageField(upload_to="images", null=True)
     price = models.PositiveIntegerField()
-    description = models.CharField(max_length=250, null=True)
+    description = models.CharField(max_length=1000, null=True)
 
     def __str__(self):
         return self.book_name

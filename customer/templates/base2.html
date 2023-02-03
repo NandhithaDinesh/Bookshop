@@ -41,83 +41,37 @@ http://www.templatemo.com/tm-475-holiday
 						<ul>
 							<li><a href="{%url 'home'%}" class="active">Home</a></li>
 
-<!--							<li><a href="tours.html">My Cart</a></li>-->
-							<li><a  href="{%url 'mycart'%}">My Cart</a></li>
+							<li><a href="{%url 'mycart'%}">My Cart</a></li>
 							<li><a href="{%url 'books'%}">View Books</a></li>
 							<li><a href="{%url 'signout'%}">Logout</a></li>
 						</ul>
-					</nav>		
-	  			</div>				
+					</nav>
+	  			</div>
   			</div>
-  		</div>	  	
+  		</div>
   	</div>
-	
+
 	<!-- Banner -->
-	<section class="tm-grey-bg tm-banner">
-		<!-- Flexslider -->
-		<div class="flexslider flexslider-banner">
-		  <ul class="slides">
-		    <li>
-			    <div class="tm-banner-inner">
-					<h1 class="tm-banner-title">Welcome To <span class="tm-yellow-text">The World</span> Of Books</h1>
-					<p class="tm-banner-subtitle tm-yellow-text">"A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” - George R.R. Martin"</p>
-
-				</div>
-				<img src="{%static 'img/book1.jpg'%}" alt="Image" />
-		    </li>
-		    <li>
-			    <div class="tm-banner-inner">
-					<h1 class="tm-banner-title">Welcome To <span class="tm-yellow-text">The World</span> Of Books</h1>
-					<p class="tm-banner-subtitle tm-yellow-text">"A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” - George R.R. Martin"</p>
+<div class="container">
+	<div class="row">
+		 {%block body_block%}
 
 
-				</div>
-		      <img src="{%static 'img/book2.jpg'%}" alt="Image" />
-		    </li>
-		    <li>
-			    <div class="tm-banner-inner">
-					<h1 class="tm-banner-title">Welcome To <span class="tm-yellow-text">The World</span> Of Books</h1>
-					<p class="tm-banner-subtitle tm-yellow-text">"A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” - George R.R. Martin"</p>
+
+                    {%endblock%}
+	</div>
+</div>
+	<!-- gray bg -->
 
 
-				</div>
-		      <img src="{%static 'img/book3.jpg'%}" alt="Image" />
-		    </li>
-		  </ul>
-		</div>	
-	</section>
-
-	<!-- gray bg -->	
-
-	
 	<!-- white bg -->
 
-	<section class="tm-white-bg section-padding-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="tm-section-header section-margin-top">
-					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
-<!--					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">Popular Books</h2></div>-->
-					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
-				</div>
-			</div>
-			<div class="row">
-				{%block body_block%}
-
-				{%endblock%}
-			</div>
-
-</div>
-			   	</div>
-			</div>
-		</div>
-	</section>
-		<footer class="tm-black-bg">
+	<footer class="tm-black-bg">
 		<div class="container">
 			<div class="row">
 				<p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name</p>
 			</div>
-		</div>		
+		</div>
 	</footer>
 	<script type="text/javascript" src="{%static 'js/jquery-1.11.2.min.js'%}"></script>      		<!-- jQuery -->
   	<script type="text/javascript" src="{%static 'js/moment.js'%}"></script>							<!-- moment.js -->
@@ -157,15 +111,15 @@ http://www.templatemo.com/tm-475-holiday
 			    }
 		  	});
 		});
-		
+
 		// Load Flexslider when everything is loaded.
-		$(window).load(function() {	  		
+		$(window).load(function() {
 			// Vimeo API nonsense
 
 /*
 			  var player = document.getElementById('player_1');
 			  $f(player).addEvent('ready', ready);
-			 
+
 			  function addEvent(element, eventName, callback) {
 			    if (element.addEventListener) {
 			      element.addEventListener(eventName, callback, false)
@@ -173,7 +127,7 @@ http://www.templatemo.com/tm-475-holiday
 			      element.attachEvent(eventName, callback, false);
 			    }
 			  }
-			 
+
 			  function ready(player_id) {
 			    var froogaloop = $f(player_id);
 			    froogaloop.addEvent('play', function(data) {
@@ -185,8 +139,8 @@ http://www.templatemo.com/tm-475-holiday
 			  }
 */
 
-			 
-			 
+
+
 			  // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
 /*
 
@@ -205,7 +159,7 @@ http://www.templatemo.com/tm-475-holiday
 */
 
 
-			  
+
 
 //	For images only
 		    $('.flexslider').flexslider({
